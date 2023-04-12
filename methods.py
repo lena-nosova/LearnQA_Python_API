@@ -3,7 +3,7 @@ url='https://playground.learnqa.ru/ajax/api/compare_query_type'
 request_types = ["GET", "POST", "PUT", "DELETE"]
 
 #1.Делает http-запрос любого типа без параметра method, описать что будет выводиться в этом случае.
-#  Был отправлен get-запрос, в результате выведено: Wrong method provided, статус
+#  Был отправлен get-запрос, в результате выведено: Wrong method provided
 
 response1 = requests.get('https://playground.learnqa.ru/ajax/api/compare_query_type')
 print(response1.text)
