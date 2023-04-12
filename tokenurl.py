@@ -17,7 +17,7 @@ else:
 response_3 = requests.get("https://playground.learnqa.ru/ajax/api/longtime_job", params={"token": token_1})
 parsed_response_text_3 = response_3.json()
 if result in parsed_response_text_3 and parsed_response_text_3['status'] == 'Job is ready':
-    print(f"Найден {result}, {status} - 'Job is ready': " + response_3.text)
+    print(f"Найден {result}, {status} -'Job is ready': " + response_3.text)
 else:
     print(f"Ошибка! Не найдены {result} и {status}")
 
